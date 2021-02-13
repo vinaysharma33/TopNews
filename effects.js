@@ -1,4 +1,3 @@
-// Function of collapse effect and call it furthur.
 function effects() {
     let heading = document.getElementsByClassName('headline');
 

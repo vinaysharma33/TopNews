@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.link{
+    display: block;
+    margin: auto;
+    list-style: none; 
+    text-decoration-line: none;
+    font-size: 25px;
+    color: white;
+    padding-left: 3vw;
+}
+#navbar{
+    display: flex;
+    background-color: dimgray;
+    height: 3.5vw;
+    top: 0px;
+    position: sticky;
+    border-bottom: 2px solid black;
+}
+a:hover{
+    color: black;
+    text-shadow:0px 0px 5px aliceblue;
+}
+#heading{
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-family: 'Roboto Slab', serif;
+}
+.headline{
+    width: 80vw;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 3px 3px 5px grey;
+    color:darkslategrey;
+}
+#title{
+    padding: 10px;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.explanation{
+    width: 80vw;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px grey;
+    display: none;
+}
+#content{
+    padding: 10px;
+    font-size: 1.5vw;
+    font-family: fantasy;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+

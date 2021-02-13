@@ -1,3 +1,4 @@
+//Function of Collapse functionality used in container
 function effects() {
     let heading = document.getElementsByClassName('headline');
 

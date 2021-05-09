@@ -1,4 +1,7 @@
-//Function of Collapse functionality used in container
+//Initialize API KEY
+let key = 'd2373a0e822a08b8ddcc269ba00e781d';
+
+// Function of collapse effect and call it furthur.
 function effects() {
     let heading = document.getElementsByClassName('headline');
 
@@ -19,7 +22,6 @@ function effects() {
 //Create an Ajax get request
 const xhr = new XMLHttpRequest();
 
-//Take your own API key
 xhr.open('GET', `https://gnews.io/api/v4/top-headlines?country=in&lang=en&token=${key}`, true);
 
 // What to do when response is ready
@@ -29,9 +31,9 @@ xhr.onload = function () {
         let articles = json.articles;
         let container = document.getElementById('container');
         let newsHtml = "";
-        articles.forEach(function(element,index){
+        articles.forEach(function (element, index) {
             let news = `<div class="headline">
-            <p id="title">Breaking News ${index+1} : ${element['title']}</p>
+            <p id="title">Breaking News ${index + 1} : ${element['title']}</p>
         </div>
         <div class="explanation">
             <p id="content">
@@ -78,9 +80,9 @@ function onload() {
             let articles = json.articles;
             let container = document.getElementById('container');
             let newsHtml = "";
-            articles.forEach(function(element,index){
+            articles.forEach(function (element, index) {
                 let news = `<div class="headline">
-            <p id="title">Breaking News ${index+1} : ${element['title']}</p>
+            <p id="title">Breaking News ${index + 1} : ${element['title']}</p>
         </div>
         <div class="explanation">
             <p id="content">
